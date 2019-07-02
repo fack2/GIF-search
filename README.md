@@ -20,6 +20,3 @@ as a user i want the list of movies be as GIF images.
 
 
 ### wireframe:
-![65736956_2780437365306466_2822433596743090176_n](https://user-images.githubusercontent.com/41991629/60512718-090c8900-9cde-11e9-85c8-04fa060aac86.jpg)
-
-
