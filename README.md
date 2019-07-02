@@ -15,5 +15,6 @@ By entering author's name A.Movies website display a list of Movies titles for t
 ### user journey: 
 
 as a user by writing author name i want to get movies list for this author.
+
 as a user i want the list of movies be as GIF images.
 
