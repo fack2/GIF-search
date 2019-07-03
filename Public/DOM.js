@@ -7,9 +7,11 @@ function request(url, cb) {
       return cb(data);
     });
 }
+var search = document.getElementById("search");
+search.addEventListener("click",function(){
 
 var author = document.getElementById("author").value;
-author = "Rowling";
+// author = "Rowling";
 request(`http://www.omdbapi.com/?s=${author}&apikey=676ce83b`, result => {
   var poster = result.Search.filter(x => x.Poster != "N/A");
   var title = poster.map(x => {
@@ -41,3 +43,8 @@ request(`http://www.omdbapi.com/?s=${author}&apikey=676ce83b`, result => {
     );
   });
 });
+
+
+
+});
+
