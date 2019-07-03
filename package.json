@@ -1,0 +1,24 @@
+{
+  "name": "GIF-search",
+  "version": "1.0.0",
+  "description": "By entering author's name A.Movies website display a list of Movies titles for this author and their GIF image.",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fack2/GIF-search.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fack2/GIF-search/issues"
+  },
+  "homepage": "https://github.com/fack2/GIF-search#readme",
+  "devDependencies": {
+    "tap-spec": "^5.0.0",
+    "tape": "^4.11.0"
+  }
+}
