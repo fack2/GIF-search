@@ -14,6 +14,13 @@ search.addEventListener("click", function() {
   divForAll.setAttribute("class", "divAll");
   divForAll.innerHTML = " ";
   let author = document.getElementById("author").value;
+  if(author==""){
+    divForAll.innerHTML ="Enter/Change author Name";
+    // break;
+    document.body.appendChild(divForAll);
+
+  }
+  else
   request(
     `http://www.omdbapi.com/?s=${author}&apikey=676ce83b`,
     authorMovies => {
@@ -34,7 +41,7 @@ search.addEventListener("click", function() {
         request(
           `http://api.giphy.com/v1/gifs/search?api_key=554maMbTU0LCsQzgPSI6yCGhSvRSZ0CE&q=${
             element.Title
-          }-movie-clips&limit=2`,
+          }-movie-clips&limit=4`,
           returnGIF => {
             request(
               `http://www.omdbapi.com/?i=${element.imdbID}&apikey=676ce83b`,
@@ -59,15 +66,19 @@ search.addEventListener("click", function() {
                 posterImg.setAttribute("src", element.Poster);
                 posterInfo.appendChild(posterImg);
                 posterInfo.appendChild(p);
-
-                let imgs = document.createElement("img");
-                imgs.src = `https://media.giphy.com/media/${
-                  returnGIF.data[0].id
-                }/giphy.gif`;
                 let moviesGIF = document.createElement("div");
+                returnGIF.data.forEach(e=>{
+                  let imgs = document.createElement("img");
+                  imgs.src = `https://media.giphy.com/media/${
+                  e.id
+                  }/giphy.gif`;
+                  moviesGIF.appendChild(imgs);
+
+                })
+                
+
                 moviesGIF.setAttribute("class", "moviesGIF");
 
-                moviesGIF.appendChild(imgs);
                 section.appendChild(posterInfo);
 
                 section.appendChild(moviesGIF);
