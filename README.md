@@ -24,3 +24,11 @@ as a user i want the list of movies be as GIF images.
 ### Website :
 
 https://fack2.github.io/GIF-search/
+
+
+### Team:
+[saharAdem](https://github.com/saharAdem)
+
+[Yaqootturman](https://github.com/yaqootturman)
+
+[YousefQawasmeh](https://github.com/YousefQwasmeh)
