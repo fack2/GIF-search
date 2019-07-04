@@ -31,19 +31,24 @@ search.addEventListener("click", function() {
     // console.log(poster);
     // console.log(title);
 
-    var section = document.createElement("section");
-    section.setAttribute("class", "allInformation");
-
     var header = document.createElement("h1");
-    header.innerHTML = author;
+    header.innerHTML = author + " movies";
     header.setAttribute("class", "authorName");
 
-    section.appendChild(header);
+    document.body.appendChild(header);
+    // var section = document.createElement("section");
+    // section.setAttribute("class", "allInformation");
 
-    document.body.appendChild(section);
+    // var header = document.createElement("h1");
+    // header.innerHTML = author;
+    // header.setAttribute("class", "authorName");
 
-    var posterInfo = document.createElement("div");
-    posterInfo.setAttribute("class", "posterInfo");
+    // section.appendChild(header);
+
+    // document.body.appendChild(section);
+
+    // var posterInfo = document.createElement("div");
+    // posterInfo.setAttribute("class", "posterInfo");
 
     // var movieTitle = title.map(x => {
     //   var v = x.split(":");
@@ -55,7 +60,7 @@ search.addEventListener("click", function() {
       request(
         `http://api.giphy.com/v1/gifs/search?api_key=554maMbTU0LCsQzgPSI6yCGhSvRSZ0CE&q=${
           element.Title
-        }-movie-clips&limit=4`,
+        }-movie-clips&limit=2`,
         resultTwo => {
           request(
             `http://www.omdbapi.com/?i=${element.imdbID}&apikey=676ce83b`,
@@ -67,6 +72,13 @@ search.addEventListener("click", function() {
                 resultThree.imdbRating
               }`;
 
+              var section = document.createElement("section");
+              section.setAttribute("class", "allInformation");
+
+              document.body.appendChild(section);
+
+              var posterInfo = document.createElement("div");
+              posterInfo.setAttribute("class", "posterInfo");
               var posterImg = document.createElement("img");
               posterImg.setAttribute("class", "posterImg");
               posterImg.setAttribute("src", element.Poster);
@@ -81,10 +93,12 @@ search.addEventListener("click", function() {
                 resultTwo.data[0].id
               }/giphy.gif`;
               var moviesGIF = document.createElement("div");
+              moviesGIF.setAttribute("class", "moviesGIF");
 
               moviesGIF.appendChild(imgs);
-              posterInfo.appendChild(moviesGIF);
               section.appendChild(posterInfo);
+
+              section.appendChild(moviesGIF);
             }
           );
         }
