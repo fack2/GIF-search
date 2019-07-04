@@ -18,10 +18,6 @@ html {
 }
 
 .posterImg {
-  /* display: inline-block;
-  float: left;
-  margin-right: 40px;
-  margin-bottom: 100px; */
   float: left;
   width: 200px;
   height: 300px;
@@ -33,8 +29,6 @@ html {
   padding: 10px;
   padding-top: 20px;
   border: 2px grey solid;
-  /* margin-bottom: 100px; */
-  /* border-block-end: 500px; */
   width: 500px;
   border-radius: 5px;
   margin-bottom: 10px;
@@ -42,17 +36,9 @@ html {
 p {
   font-size: 20px;
   text-align: left;
-  /* text-decoration: none; */
-  /* display: flex; */
-  /* border: 2px yellow solid; */
-
-  /* justify-content: flex-end; */
 }
 
 .moviesGIF img {
-  /* display: block; */
-  /* border: 20px yellow solid; */
-
   width: 250px;
   height: 330px;
   border-radius: 5px;
