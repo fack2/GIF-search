@@ -43,7 +43,6 @@ p {
 }
 
 .posterInfo {
-  /* border: 20px blue solid; */
   height: 40vh;
 }
 @media only screen and (max-width: 600px) {
