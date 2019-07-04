@@ -9,12 +9,10 @@
 }
 
 html {
-  margin: 0 auto;
+  margin: 5% auto;
   text-align: center;
-  /* width: 80%; */
   display: flex;
   justify-content: center;
-  background-image: url(/Public/images/background-img.jpg);
 }
 
 .posterImg {
@@ -62,4 +60,7 @@ p {
   .posterInfo {
     height: 35vh;
   }
+}
+label {
+  color: white;
 }
