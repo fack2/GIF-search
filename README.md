@@ -18,8 +18,8 @@ as a user by writing author name i want to get movies list for this author.
 as a user i want the list of movies be as GIF images.
 
 ### wireframe:
+![65775938_461147264671996_1905985174613524480_n](https://user-images.githubusercontent.com/41991629/60651866-c36fcd80-9e4f-11e9-802f-4affb73c3da3.jpg)
 
-![65775938_461147264671996_1905985174613524480_n](https://user-images.githubusercontent.com/41991629/60651642-58be9200-9e4f-11e9-8c47-89fe9669cfde.jpg)
 
 
 
